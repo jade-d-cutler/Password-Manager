@@ -52,7 +52,7 @@ canvas.grid(column=1, row=0)
 website_label = Label(text="Website:")
 website_label.grid(column=0, row=1)
 
-username_label = Label(text="Email/Username:")
+username_label = Label(text="Username:")
 username_label.grid(column=0, row=2)
 
 password_label = Label(text="Password:")
@@ -66,15 +66,15 @@ username_entry = Entry(width=35)
 username_entry.grid(column=1, columnspan=2, row=2)
 username_entry.insert(0, "email_name@email.com")
 
-password_entry = Entry(width=21)
+password_entry = Entry(width=35)
 password_entry.grid(column=1, row=3)
 
 
-generate_btn = Button(width=13, text="Generate Password", command=generate_password)
-generate_btn.grid(column=2, row=3)
+generate_btn = Button(text="Generate Password", command=generate_password)
+generate_btn.grid(column=1, row=4)
 
-add_btn = Button(text="Add", width=36, command=save)
-add_btn.grid(column=1, columnspan=2, row=4)
+add_btn = Button(text="Add", command=save)
+add_btn.grid(column=2, row=4)
 
 
 
